@@ -16,9 +16,9 @@ I built this lab to observe how a small test service behaved when it received mo
 
 ## What I observed
 
-- Baseline load average was about `0.25`
-- Load average rose to about `1.5` during the test
-- The system returned to about `0.3` after the traffic stopped
+- Wireshark showed the repeated traffic pattern between the two lab machines
+- Linux `top` showed increased system load while the test was running
+- The host recovered after the controlled traffic stopped
 
 The exercise made the availability side of security easier to understand. Packet captures showed the traffic pattern, while the system measurements showed what that traffic meant for the host.
 
